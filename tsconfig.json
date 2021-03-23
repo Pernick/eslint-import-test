@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*"]
+    },
+    "moduleResolution": "node",
+    "outDir": "./dist/",
+    "alwaysStrict": true,
+    "pretty": true,
+    // If we want dynamic imports (bundle splitting) we need to preserve webpacks magic comments.
+    // Instead we should use webpack plugin to remove comments later
+    "removeComments": false,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "target": "es2015",
+    "lib": ["es2017", "dom"],
+    "jsx": "react",
+    "allowJs": true,
+    "checkJs": false,
+    "resolveJsonModule": true
+    // "skipLibCheck": true
+  },
+  "exclude": ["node_modules", "public"]
+}
